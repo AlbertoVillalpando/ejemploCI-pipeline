@@ -9,8 +9,8 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh 'echo "Pruebas unitarias"'
-                sh 'echo "Pruebas"'
+                sh 'python3 manage.py test'
+                sh 'echo "Pruebas de aceptación"'
             }
             
         }
